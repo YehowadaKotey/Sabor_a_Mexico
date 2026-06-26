@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabor a Mexico | Authentic Mexican Restaurant Las Vegas | Meadows Mall</title>
+<meta name="description" content="Sabor a Mexico serves authentic Mexican cuisine at Meadows Mall, Las Vegas. Enjoy tacos, burritos, quesadillas, and more for just $10–$20. Dine-in, takeaway, and delivery available. Call +1 725-296-2943.">
+<meta name="keywords" content="Mexican restaurant Las Vegas, cheap Mexican food Las Vegas, Meadows Mall restaurants, authentic Mexican food Las Vegas, tacos Las Vegas, burritos Las Vegas, Sabor a Mexico, casual Mexican dining Las Vegas">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Sabor a Mexico | Authentic Mexican Restaurant in Las Vegas">
+<meta property="og:description" content="Authentic Mexican cuisine in the heart of Las Vegas. Fresh tacos, burritos, quesadillas. Dine-in, takeaway, and delivery at Meadows Mall.">
+<meta property="og:type" content="restaurant">
+<link rel="canonical" href="https://saboramexicolasvegas.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Sabor a Mexico",
+  "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4300 Meadows Ln Ste 5120",
+    "addressLocality": "Las Vegas",
+    "addressRegion": "NV",
+    "postalCode": "89107",
+    "addressCountry": "US"
+  },
+  "telephone": "+17252962943",
+  "priceRange": "$$",
+  "servesCuisine": "Mexican",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.2",
+    "reviewCount": "46"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "10:00",
+      "closes": "21:00"
+    }
+  ],
+  "hasMap": "https://maps.google.com/?q=4300+Meadows+Ln+Ste+5120+Las+Vegas+NV+89107"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Pacifico&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --obsidian: #0D0804;
+  --chipotle: #1C0E06;
+  --marigold: #F5901E;
+  --marigold-light: #FAB053;
+  --chile: #C7362A;
+  --chile-light: #D94033;
+  --lime: #7BAF3E;
+  --cream: #FEF3E4;
+  --sand: #C4A882;
+  --gold: #F2C438;
+  --white: #FFFFFF;
+  --nav-h: 68px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--obsidian);color:var(--cream);line-height:1.6;overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;font-family:'Inter',sans-serif;border:none;background:none}
+
+/* ANIMATIONS */
+.fu{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.fi{opacity:0;transition:opacity .8s ease}
+.fu.vis,.fi.vis{opacity:1;transform:translateY(0)}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:1000;padding:0 clamp(1rem,4vw,3rem);display:flex;align-items:center;justify-content:space-between;transition:background .3s,backdrop-filter .3s}
+.nav.sc{background:rgba(13,8,4,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(245,144,30,.14)}
+.nav-logo{font-family:'Pacifico',cursive;font-size:1.35rem;color:var(--marigold);letter-spacing:-.01em}
+.nav-links{display:flex;align-items:center;gap:1.75rem}
+.nav-links a{font-size:.82rem;font-weight:500;color:var(--sand);letter-spacing:.06em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--cream)}
+.nav-cta{background:var(--marigold)!important;color:var(--obsidian)!important;padding:.48rem 1.1rem;border-radius:3px;font-weight:600!important;transition:background .2s!important}
+.nav-cta:hover{background:var(--marigold-light)!important}
+.hbg{display:none;flex-direction:column;gap:5px;padding:5px}
+.hbg span{display:block;width:22px;height:2px;background:var(--cream);border-radius:1px;transition:all .3s}
+@media(max-width:768px){
+  .nav-links{position:fixed;top:var(--nav-h);left:0;right:0;background:rgba(13,8,4,.98);flex-direction:column;padding:1.75rem;gap:1.25rem;transform:translateX(100%);transition:transform .3s;border-top:1px solid rgba(245,144,30,.18)}
+  .nav-links.open{transform:translateX(0)}
+  .hbg{display:flex}
+}
+
+/* FLOAT CALL */
+.float-call{position:fixed;bottom:1.75rem;right:1.75rem;z-index:999;display:flex;align-items:center;gap:.45rem;background:var(--chile);color:#fff;padding:.8rem 1.4rem;border-radius:100px;font-weight:700;font-size:.875rem;box-shadow:0 4px 28px rgba(199,54,42,.45);animation:pulse 2.5s ease-in-out infinite;transition:transform .2s}
+.float-call:hover{transform:scale(1.06);animation:none}
+@keyframes pulse{0%,100%{box-shadow:0 4px 28px rgba(199,54,42,.45)}50%{box-shadow:0 4px 40px rgba(199,54,42,.7)}}
+
+/* BTNS */
+.btn{display:inline-flex;align-items:center;gap:.45rem;padding:.85rem 1.9rem;border-radius:3px;font-weight:600;font-size:.92rem;cursor:pointer;transition:all .2s;border:none;font-family:'Inter',sans-serif;letter-spacing:.01em;line-height:1}
+.btn-p{background:var(--marigold);color:var(--obsidian)}
+.btn-p:hover{background:var(--marigold-light);transform:translateY(-2px)}
+.btn-s{background:transparent;color:var(--cream);border:1.5px solid rgba(255,255,255,.32)}
+.btn-s:hover{border-color:var(--cream);background:rgba(255,255,255,.07);transform:translateY(-2px)}
+.btn-r{background:var(--chile);color:#fff}
+.btn-r:hover{background:var(--chile-light);transform:translateY(-2px)}
+.btn-sm{padding:.52rem 1rem;font-size:.78rem}
+
+/* SECTION BASE */
+section{padding:clamp(3.5rem,7vw,5.5rem) clamp(1rem,4.5vw,3rem)}
+.inner{max-width:1080px;margin:0 auto}
+.sec-label{display:inline-flex;align-items:center;gap:.45rem;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--marigold);margin-bottom:.6rem}
+.sec-label::before{content:'✦';font-size:.6rem}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.8vw,2.85rem);font-weight:700;line-height:1.12;color:var(--cream);margin-bottom:.9rem}
+.sec-sub{font-size:.95rem;color:var(--sand);line-height:1.75}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,8,4,.55) 0%,rgba(13,8,4,.48) 45%,rgba(13,8,4,.88) 100%);z-index:1}
+.hero-content{position:relative;z-index:2;max-width:780px;padding:clamp(1rem,4vw,2rem);padding-top:calc(var(--nav-h) + 2.5rem)}
+.hero-brow{display:inline-flex;align-items:center;gap:.6rem;font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--marigold);margin-bottom:1.25rem}
+.hero-brow::before,.hero-brow::after{content:'';width:22px;height:1px;background:var(--marigold);opacity:.6}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.3rem,5.8vw,4.4rem);font-weight:900;line-height:1.08;color:var(--cream);margin-bottom:1.2rem;letter-spacing:-.025em}
+.hero h1 em{font-style:italic;color:var(--marigold)}
+.hero-sub{font-size:clamp(.95rem,2vw,1.12rem);color:var(--sand);max-width:530px;margin:0 auto 2.25rem;line-height:1.72}
+.hero-badges{display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem;margin-bottom:2.25rem}
+.badge{display:inline-flex;align-items:center;gap:.35rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:.38rem .85rem;border-radius:100px;font-size:.78rem;font-weight:500;color:var(--cream);backdrop-filter:blur(8px)}
+.hero-btns{display:flex;justify-content:center;flex-wrap:wrap;gap:.85rem}
+
+/* ABOUT */
+.about{background:var(--chipotle)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.about-img-wrap{position:relative;border-radius:3px;overflow:hidden;aspect-ratio:4/3}
+.about-img-wrap::after{content:'';position:absolute;top:12px;left:12px;right:-12px;bottom:-12px;border:2px solid rgba(245,144,30,.35);border-radius:3px;z-index:-1}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin-top:1.75rem}
+.stat{background:rgba(245,144,30,.07);border:1px solid rgba(245,144,30,.18);padding:1.1rem 1.25rem;border-radius:3px}
+.stat-n{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--marigold);line-height:1}
+.stat-l{font-size:.72rem;color:var(--sand);margin-top:.2rem;text-transform:uppercase;letter-spacing:.09em}
+@media(max-width:768px){.about-grid{grid-template-columns:1fr;gap:2rem}.about-img-wrap::after{display:none}}
+
+/* MENU */
+.menu{background:var(--obsidian)}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.35rem;margin-top:2.75rem}
+.mc{background:var(--chipotle);border:1px solid rgba(245,144,30,.11);border-radius:3px;overflow:hidden;transition:transform .3s,border-color .3s}
+.mc:hover{transform:translateY(-6px);border-color:rgba(245,144,30,.38)}
+.mc-img{height:195px;overflow:hidden;position:relative}
+.mc-img img{transition:transform .45s}
+.mc:hover .mc-img img{transform:scale(1.06)}
+.mc-img-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,8,4,.58) 0%,transparent 60%)}
+.mc-tag{position:absolute;top:11px;right:11px;background:var(--marigold);color:var(--obsidian);font-size:.68rem;font-weight:700;padding:.28rem .58rem;border-radius:2px;text-transform:uppercase;letter-spacing:.05em}
+.mc-body{padding:1.15rem 1.2rem}
+.mc-cat{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.13em;color:var(--marigold);margin-bottom:.35rem}
+.mc-title{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--cream);margin-bottom:.45rem}
+.mc-desc{font-size:.84rem;color:var(--sand);line-height:1.62;margin-bottom:.95rem}
+.mc-foot{display:flex;align-items:center;justify-content:space-between}
+.mc-price{font-size:1.05rem;font-weight:600;color:var(--gold)}
+.mc-price span{font-size:.72rem;color:var(--sand);font-weight:400}
+.menu-note{text-align:center;margin-top:2.75rem}
+.menu-note p{color:var(--sand);font-size:.88rem;margin-bottom:1rem}
+
+/* SERVICES */
+.services{background:var(--chipotle)}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.35rem;margin-top:2.75rem}
+.svc{background:rgba(245,144,30,.05);border:1px solid rgba(245,144,30,.14);border-radius:3px;padding:1.85rem 1.65rem;transition:background .3s,border-color .3s}
+.svc:hover{background:rgba(245,144,30,.1);border-color:rgba(245,144,30,.32)}
+.svc-icon{font-size:2.4rem;margin-bottom:1.15rem;display:block}
+.svc-title{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:var(--cream);margin-bottom:.65rem}
+.svc-desc{font-size:.875rem;color:var(--sand);line-height:1.7}
+.svc-tag{display:inline-block;margin-top:.95rem;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--lime)}
+
+/* LOCATION */
+.location{background:var(--obsidian)}
+.loc-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:2.75rem;align-items:start;margin-top:2.75rem}
+.loc-info h3{font-family:'Playfair Display',serif;font-size:1.45rem;color:var(--cream);margin-bottom:1.4rem}
+.loc-detail{display:flex;gap:.9rem;margin-bottom:1.2rem;align-items:flex-start}
+.loc-icon{font-size:1.2rem;flex-shrink:0;margin-top:.08rem}
+.loc-text strong{font-size:.9rem;color:var(--cream);font-weight:600;display:block;margin-bottom:.15rem}
+.loc-text p{font-size:.86rem;color:var(--sand);line-height:1.65}
+.loc-text a{color:var(--marigold)}
+.map-wrap{border-radius:3px;overflow:hidden;border:1px solid rgba(245,144,30,.18);aspect-ratio:4/3}
+.map-wrap iframe{width:100%;height:100%;border:none;display:block}
+.loc-btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.9rem}
+@media(max-width:768px){.loc-grid{grid-template-columns:1fr}}
+
+/* REVIEWS */
+.reviews{background:var(--chipotle)}
+.rating-row{display:flex;align-items:center;gap:1.1rem;margin-bottom:2.75rem}
+.rating-big{font-family:'Playfair Display',serif;font-size:4rem;font-weight:900;color:var(--cream);line-height:1}
+.rating-stars{color:var(--gold);font-size:1.3rem;letter-spacing:2px}
+.rating-info p{font-size:.82rem;color:var(--sand);margin-top:.2rem}
+.rating-verify{color:var(--lime)!important;font-weight:600;font-size:.75rem!important}
+.rv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:1.25rem}
+.rv{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:3px;padding:1.45rem;transition:border-color .3s}
+.rv:hover{border-color:rgba(245,144,30,.24)}
+.rv-stars{color:var(--gold);font-size:.88rem;letter-spacing:1px;margin-bottom:.7rem}
+.rv-text{font-size:.86rem;color:var(--sand);line-height:1.72;font-style:italic;margin-bottom:1.2rem}
+.rv-auth{display:flex;align-items:center;gap:.7rem}
+.rv-av{width:34px;height:34px;border-radius:50%;background:var(--marigold);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.78rem;color:var(--obsidian);flex-shrink:0}
+.rv-name{font-weight:600;font-size:.84rem;color:var(--cream)}
+.rv-date{font-size:.72rem;color:var(--sand);margin-top:.08rem}
+
+/* CONTACT */
+.contact{background:var(--obsidian)}
+.ct-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:3.5rem;margin-top:2.75rem;align-items:start}
+.ct-phone{display:flex;align-items:center;gap:.7rem;font-size:1.55rem;font-weight:700;color:var(--marigold);font-family:'Playfair Display',serif;margin-bottom:1.4rem}
+.ct-form{background:var(--chipotle);border:1px solid rgba(245,144,30,.14);border-radius:3px;padding:1.9rem}
+.ct-form h3{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--cream);margin-bottom:1.4rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.95rem}
+.fg{margin-bottom:1.15rem}
+.fg label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--sand);margin-bottom:.45rem}
+.fg input,.fg textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);border-radius:3px;padding:.72rem .95rem;font-family:'Inter',sans-serif;font-size:.88rem;color:var(--cream);transition:border-color .2s;outline:none}
+.fg input:focus,.fg textarea:focus{border-color:var(--marigold)}
+.fg textarea{resize:vertical;min-height:95px}
+.ct-note{font-size:.72rem;color:var(--sand);text-align:center;margin-top:.7rem}
+.ct-note a{color:var(--marigold)}
+.divider-line{display:flex;align-items:center;gap:.85rem;margin:1.5rem 0}
+.divider-line::before,.divider-line::after{content:'';flex:1;height:1px;background:rgba(245,144,30,.18)}
+.divider-line span{font-size:.75rem;color:var(--sand);white-space:nowrap}
+@media(max-width:768px){.ct-grid{grid-template-columns:1fr;gap:2rem}.form-row{grid-template-columns:1fr}}
+
+/* FOOTER */
+.footer{background:#090503;border-top:1px solid rgba(245,144,30,.11);padding:2.75rem clamp(1rem,4.5vw,3rem) 1.4rem}
+.footer-inner{max-width:1080px;margin:0 auto}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2.75rem;margin-bottom:2.25rem}
+.ft-logo{font-family:'Pacifico',cursive;font-size:1.3rem;color:var(--marigold)}
+.ft-brand p{font-size:.84rem;color:var(--sand);margin-top:.7rem;line-height:1.7;max-width:270px}
+.ft-emojis{margin-top:.9rem;font-size:1.15rem;display:flex;gap:.65rem}
+.ft-col h4{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.13em;color:var(--cream);margin-bottom:.95rem}
+.ft-col ul li{margin-bottom:.55rem}
+.ft-col ul li a{font-size:.84rem;color:var(--sand);transition:color .2s}
+.ft-col ul li a:hover{color:var(--marigold)}
+.ft-col .addr{font-size:.84rem;color:var(--sand)}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.055);padding-top:1.35rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem}
+.ft-bottom p{font-size:.76rem;color:rgba(196,168,130,.45)}
+@media(max-width:768px){.ft-grid{grid-template-columns:1fr;gap:1.85rem}}
+
+/* UTILS */
+.center{text-align:center}
+.mt-s{margin-top:.75rem}
+.mt-m{margin-top:1.5rem}
+.mt-l{margin-top:2rem}
+.gap-s{gap:.65rem}
+.flex-wrap{display:flex;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#home" class="nav-logo">Sabor a México</a>
+  <button class="hbg" id="hbg" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="tel:+17252962943" class="nav-cta">📞 Call Now</a></li>
+  </ul>
+</nav>
+
+<!-- FLOATING CALL -->
+<a href="tel:+17252962943" class="float-call">📞 Call Now</a>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1600&q=80&auto=format&fit=crop" alt="Authentic Mexican street tacos at Sabor a Mexico Las Vegas" loading="eager">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-brow fu">Meadows Mall · Las Vegas, NV</div>
+    <h1 class="fu">Authentic Mexican<br><em>Flavors</em> in the<br>Heart of Las Vegas</h1>
+    <p class="hero-sub fu">Fresh ingredients. Bold spices. Unforgettable taste. Dine with us for a real Mexican experience — just $10 to $20 per person.</p>
+    <div class="hero-badges fu">
+      <span class="badge">⭐ 4.2 Rating</span>
+      <span class="badge">💲 $10–$20 Per Person</span>
+      <span class="badge">🕙 Open Daily</span>
+      <span class="badge">🚗 Dine-in &amp; Delivery</span>
+    </div>
+    <div class="hero-btns fu">
+      <a href="tel:+17252962943" class="btn btn-p">📞 Call Now</a>
+      <a href="https://maps.google.com/?q=4300+Meadows+Ln+Ste+5120+Las+Vegas+NV+89107" target="_blank" rel="noopener" class="btn btn-s">📍 Get Directions</a>
+      <a href="#menu" class="btn btn-s">🍽️ View Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="inner">
+    <div class="about-grid">
+      <div class="fi">
+        <div class="about-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80&auto=format&fit=crop" alt="Fresh Mexican food prepared daily at Sabor a Mexico" loading="lazy">
+        </div>
+        <div class="stats-grid">
+          <div class="stat"><div class="stat-n">4.2★</div><div class="stat-l">Customer Rating</div></div>
+          <div class="stat"><div class="stat-n">$10</div><div class="stat-l">Starting Price</div></div>
+          <div class="stat"><div class="stat-n">3</div><div class="stat-l">Ways to Order</div></div>
+          <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Fresh Daily</div></div>
+        </div>
+      </div>
+      <div class="fu">
+        <span class="sec-label">Our Story</span>
+        <h2 class="sec-title">More Than a Meal —<br>A Taste of Home</h2>
+        <p class="sec-sub" style="margin-bottom:1.35rem">At <strong style="color:var(--cream)">Sabor a México</strong>, we believe the best Mexican food is made with heart. Nestled inside Meadows Mall, we bring the warmth of authentic Mexican cooking straight to Las Vegas.</p>
+        <p class="sec-sub" style="margin-bottom:1.35rem">Every dish is crafted from time-honored recipes — vibrant salsas, slow-seasoned meats, and handmade tortillas that fill the air with the kind of aroma that makes you feel welcome before you even sit down.</p>
+        <p class="sec-sub" style="margin-bottom:1.85rem">Whether you're grabbing a quick lunch, enjoying a family dinner, or picking up takeaway, we're here to make every meal a celebration.</p>
+        <div class="flex-wrap gap-s">
+          <a href="#menu" class="btn btn-p">Explore Our Menu</a>
+          <a href="tel:+17252962943" class="btn btn-s">Call to Order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="inner">
+    <div class="center">
+      <span class="sec-label">Our Menu</span>
+      <h2 class="sec-title">Made Fresh, Every Day</h2>
+      <p class="sec-sub" style="max-width:480px;margin:.65rem auto 0">From street-style tacos to loaded burritos — bold flavors at honest prices.</p>
+    </div>
+    <div class="menu-grid">
+
+      <!-- TACOS -->
+      <div class="mc fu">
+        <div class="mc-img">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80&auto=format&fit=crop" alt="Street tacos carne asada al pastor at Sabor a Mexico Las Vegas" loading="lazy">
+          <div class="mc-img-ov"></div>
+          <span class="mc-tag">Fan Favorite</span>
+        </div>
+        <div class="mc-body">
+          <div class="mc-cat">Tacos</div>
+          <h3 class="mc-title">Street Tacos</h3>
+          <p class="mc-desc">Corn tortillas loaded with seasoned carne asada, al pastor, or chicken — topped with fresh cilantro, onion, and house salsa verde.</p>
+          <div class="mc-foot">
+            <div class="mc-price">$10.99 <span>/ 3 tacos</span></div>
+            <a href="tel:+17252962943" class="btn btn-p btn-sm">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BURRITOS -->
+      <div class="mc fu">
+        <div class="mc-img">
+          <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&q=80&auto=format&fit=crop" alt="Mega burrito at Sabor a Mexico Las Vegas" loading="lazy">
+          <div class="mc-img-ov"></div>
+        </div>
+        <div class="mc-body">
+          <div class="mc-cat">Burritos</div>
+          <h3 class="mc-title">Mega Burrito</h3>
+          <p class="mc-desc">Flour tortilla packed with your choice of protein, rice, black beans, sour cream, guacamole, and pico de gallo. A full meal in your hands.</p>
+          <div class="mc-foot">
+            <div class="mc-price">$12.99 <span>/ each</span></div>
+            <a href="tel:+17252962943" class="btn btn-p btn-sm">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUESADILLAS -->
+      <div class="mc fu">
+        <div class="mc-img">
+          <img src="https://images.unsplash.com/photo-1618449840665-9ed506d73a34?w=600&q=80&auto=format&fit=crop" alt="Cheese quesadilla at Sabor a Mexico Las Vegas" loading="lazy">
+          <div class="mc-img-ov"></div>
+        </div>
+        <div class="mc-body">
+          <div class="mc-cat">Quesadillas</div>
+          <h3 class="mc-title">Cheese Quesadilla</h3>
+          <p class="mc-desc">Crispy grilled flour tortilla filled with melted Oaxacan cheese and your choice of protein. Served with fresh guacamole and sour cream.</p>
+          <div class="mc-foot">
+            <div class="mc-price">$11.99 <span>/ each</span></div>
+            <a href="tel:+17252962943" class="btn btn-p btn-sm">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMBOS -->
+      <div class="mc fu">
+        <div class="mc-img">
+          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80&auto=format&fit=crop" alt="Family combo meal at Sabor a Mexico Las Vegas" loading="lazy">
+          <div class="mc-img-ov"></div>
+          <span class="mc-tag">Best Value</span>
+        </div>
+        <div class="mc-body">
+          <div class="mc-cat">Combo Meals</div>
+          <h3 class="mc-title">Family Combo</h3>
+          <p class="mc-desc">3 tacos + 1 burrito + 2 drinks. Perfect for sharing — our best-value meal that doesn't skimp on flavor or portion size.</p>
+          <div class="mc-foot">
+            <div class="mc-price">$18.99 <span>/ combo</span></div>
+            <a href="tel:+17252962943" class="btn btn-p btn-sm">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DRINKS -->
+      <div class="mc fu">
+        <div class="mc-img">
+          <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?w=600&q=80&auto=format&fit=crop" alt="Aguas frescas horchata jamaica at Sabor a Mexico" loading="lazy">
+          <div class="mc-img-ov"></div>
+        </div>
+        <div class="mc-body">
+          <div class="mc-cat">Drinks</div>
+          <h3 class="mc-title">Aguas Frescas</h3>
+          <p class="mc-desc">Cool off with handcrafted Mexican drinks — creamy horchata, hibiscus agua de jamaica, or refreshing tamarindo. All made fresh daily.</p>
+          <div class="mc-foot">
+            <div class="mc-price">$3.99 <span>/ drink</span></div>
+            <a href="tel:+17252962943" class="btn btn-p btn-sm">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NACHOS -->
+      <div class="mc fu">
+        <div class="mc-img">
+          <img src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=600&q=80&auto=format&fit=crop" alt="Loaded nachos at Sabor a Mexico Las Vegas" loading="lazy">
+          <div class="mc-img-ov"></div>
+        </div>
+        <div class="mc-body">
+          <div class="mc-cat">Sides &amp; Extras</div>
+          <h3 class="mc-title">Loaded Nachos</h3>
+          <p class="mc-desc">Crispy tortilla chips piled high with melted cheese, jalapeños, sour cream, guacamole, and your choice of meat. Built for sharing.</p>
+          <div class="mc-foot">
+            <div class="mc-price">$13.99 <span>/ plate</span></div>
+            <a href="tel:+17252962943" class="btn btn-p btn-sm">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="menu-note fu">
+      <p>Full menu available in-store or by calling us directly</p>
+      <a href="tel:+17252962943" class="btn btn-p" style="font-size:.96rem;padding:.95rem 2.25rem">📞 Call to Order — +1 725-296-2943</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="inner">
+    <div class="center">
+      <span class="sec-label">How We Serve You</span>
+      <h2 class="sec-title">Order Your Way</h2>
+      <p class="sec-sub" style="max-width:440px;margin:.65rem auto 0">Whether you're dining with us or eating at home, we've got you covered.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc fu">
+        <span class="svc-icon">🍽️</span>
+        <h3 class="svc-title">Dine-In</h3>
+        <p class="svc-desc">Pull up a chair and enjoy our full menu in a warm, relaxed atmosphere inside Meadows Mall. Perfect for lunch, dinner, or a casual family meal out.</p>
+        <span class="svc-tag">✔ Available Daily</span>
+      </div>
+      <div class="svc fu">
+        <span class="svc-icon">🛍️</span>
+        <h3 class="svc-title">Takeaway</h3>
+        <p class="svc-desc">Call ahead to have your order ready the moment you arrive — no waiting, no hassle. Great for busy schedules and quick mall trips during your day.</p>
+        <span class="svc-tag">✔ Call Ahead Ready</span>
+      </div>
+      <div class="svc fu">
+        <span class="svc-icon">🛵</span>
+        <h3 class="svc-title">Delivery</h3>
+        <p class="svc-desc">Craving Sabor a México from the comfort of home? We deliver! Authentic Mexican flavors brought straight to your door — fresh, fast, and full of flavor.</p>
+        <span class="svc-tag">✔ Coming to Your Door</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="inner">
+    <span class="sec-label">Find Us</span>
+    <h2 class="sec-title">We're Inside Meadows Mall</h2>
+    <div class="loc-grid">
+      <div class="fu">
+        <h3>Visit Us Today</h3>
+        <div class="loc-detail">
+          <span class="loc-icon">📍</span>
+          <div class="loc-text">
+            <strong>Address</strong>
+            <p>4300 Meadows Ln, Suite 5120<br>Las Vegas, NV 89107<br>Inside Meadows Mall</p>
+          </div>
+        </div>
+        <div class="loc-detail">
+          <span class="loc-icon">📞</span>
+          <div class="loc-text">
+            <strong>Phone</strong>
+            <p><a href="tel:+17252962943">+1 725-296-2943</a></p>
+          </div>
+        </div>
+        <div class="loc-detail">
+          <span class="loc-icon">🕙</span>
+          <div class="loc-text">
+            <strong>Hours</strong>
+            <p>Monday – Sunday<br>10:00 AM – 9:00 PM</p>
+          </div>
+        </div>
+        <div class="loc-detail">
+          <span class="loc-icon">🅿️</span>
+          <div class="loc-text">
+            <strong>Parking</strong>
+            <p>Free mall parking available.<br>Accessible entrance from Meadows Ln.</p>
+          </div>
+        </div>
+        <div class="loc-btns">
+          <a href="https://maps.google.com/?q=4300+Meadows+Ln+Ste+5120+Las+Vegas+NV+89107" target="_blank" rel="noopener" class="btn btn-p">📍 Open in Google Maps</a>
+          <a href="tel:+17252962943" class="btn btn-s">📞 Call Us</a>
+        </div>
+      </div>
+      <div class="fi">
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.745!2d-115.213935!3d36.172960!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c42ea7e4fd11%3A0x6b9b8f9d4a2c4e8f!2s4300%20Meadows%20Ln%2C%20Las%20Vegas%2C%20NV%2089107!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sabor a Mexico at Meadows Mall Las Vegas map"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="inner">
+    <span class="sec-label">Customer Reviews</span>
+    <h2 class="sec-title">What Our Guests Say</h2>
+    <div class="rating-row fu">
+      <div class="rating-big">4.2</div>
+      <div>
+        <div class="rating-stars">★★★★☆</div>
+        <p class="rating-info" style="color:var(--sand);font-size:.82rem;margin-top:.2rem">Based on 46 customer reviews</p>
+        <p class="rating-info rating-verify" style="margin-top:.25rem">⬆ Google Verified Rating</p>
+      </div>
+    </div>
+    <div class="rv-grid">
+      <div class="rv fu">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Honestly one of the best Mexican spots in Las Vegas. The carne asada tacos are incredible — fresh tortillas, perfect seasoning. And the price? You can't beat it. We come here every weekend now!"</p>
+        <div class="rv-auth">
+          <div class="rv-av">MR</div>
+          <div><div class="rv-name">Maria R.</div><div class="rv-date">2 weeks ago · Google Review</div></div>
+        </div>
+      </div>
+      <div class="rv fu">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Super convenient inside Meadows Mall. Stopped in after shopping and was blown away. The horchata is amazing and the combo meal is great value. Friendly staff, really quick service."</p>
+        <div class="rv-auth">
+          <div class="rv-av">JT</div>
+          <div><div class="rv-name">James T.</div><div class="rv-date">1 month ago · Google Review</div></div>
+        </div>
+      </div>
+      <div class="rv fu">
+        <div class="rv-stars">★★★★☆</div>
+        <p class="rv-text">"Got the mega burrito and it was absolutely packed — easily the biggest I've had in Vegas. The guacamole is fresh and delicious. Great price for the portion. Definitely coming back."</p>
+        <div class="rv-auth">
+          <div class="rv-av">AL</div>
+          <div><div class="rv-name">Ana L.</div><div class="rv-date">3 weeks ago · Google Review</div></div>
+        </div>
+      </div>
+      <div class="rv fu">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Took my family of four for dinner — everyone loved it! Kids devoured the quesadillas, my husband and I shared nachos. Warm, welcoming atmosphere and really affordable. Hidden gem in the mall!"</p>
+        <div class="rv-auth">
+          <div class="rv-av">SP</div>
+          <div><div class="rv-name">Sandra P.</div><div class="rv-date">2 months ago · Google Review</div></div>
+        </div>
+      </div>
+      <div class="rv fu">
+        <div class="rv-stars">★★★★☆</div>
+        <p class="rv-text">"Authentic flavors that remind me of my grandmother's cooking in Mexico. The al pastor tacos are perfectly seasoned. Quick service and the staff are very friendly. Highly recommend to anyone nearby!"</p>
+        <div class="rv-auth">
+          <div class="rv-av">CG</div>
+          <div><div class="rv-name">Carlos G.</div><div class="rv-date">1 month ago · Google Review</div></div>
+        </div>
+      </div>
+      <div class="rv fu">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"I order from here at least twice a week. Delivery is always on time and the food arrives hot. Street tacos are my go-to — never disappointed. Best Mexican food in this part of Las Vegas."</p>
+        <div class="rv-auth">
+          <div class="rv-av">DH</div>
+          <div><div class="rv-name">David H.</div><div class="rv-date">3 months ago · Google Review</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="inner">
+    <div class="ct-grid">
+      <div class="fu">
+        <span class="sec-label">Contact Us</span>
+        <h2 class="sec-title">Get in Touch</h2>
+        <p class="sec-sub" style="margin-bottom:1.4rem">Have a question, want to place an order, or need more info? Give us a call — we're always happy to help.</p>
+        <div class="ct-phone">📞 <a href="tel:+17252962943" style="color:var(--marigold)">+1 725-296-2943</a></div>
+        <a href="tel:+17252962943" class="btn btn-r" style="margin-bottom:1.85rem">📞 Call Now to Order</a>
+        <div class="divider-line"><span>or send us a message</span></div>
+        <div style="margin-top:1.35rem">
+          <div class="loc-detail">
+            <span class="loc-icon">📍</span>
+            <div class="loc-text"><strong>Address</strong><p>4300 Meadows Ln, Suite 5120, Las Vegas, NV 89107</p></div>
+          </div>
+          <div class="loc-detail">
+            <span class="loc-icon">🕙</span>
+            <div class="loc-text"><strong>Hours</strong><p>Open Daily · 10:00 AM – 9:00 PM</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="fu">
+        <div class="ct-form">
+          <h3>Send Us a Message</h3>
+          <div class="form-row">
+            <div class="fg">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" placeholder="Your name" autocomplete="name">
+            </div>
+            <div class="fg">
+              <label for="f-phone">Phone</label>
+              <input type="tel" id="f-phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
+            </div>
+          </div>
+          <div class="fg">
+            <label for="f-email">Email (optional)</label>
+            <input type="email" id="f-email" placeholder="your@email.com" autocomplete="email">
+          </div>
+          <div class="fg">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" placeholder="Ask about our menu, hours, or place a special order..."></textarea>
+          </div>
+          <button onclick="submitForm()" class="btn btn-p" style="width:100%;justify-content:center;padding:.95rem">Send Message</button>
+          <p class="ct-note">Or call us directly at <a href="tel:+17252962943">+1 725-296-2943</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="ft-logo">Sabor a México</div>
+        <p>Authentic Mexican cuisine in the heart of Las Vegas. Fresh flavors, warm service, and unforgettable meals — right inside Meadows Mall.</p>
+        <div class="ft-emojis">🌮 🌯 🧀 🥑</div>
+      </div>
+      <div class="ft-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+17252962943">+1 725-296-2943</a></li>
+          <li><span class="addr">4300 Meadows Ln, Ste 5120</span></li>
+          <li><span class="addr">Las Vegas, NV 89107</span></li>
+          <li><span class="addr">Open Daily 10AM – 9PM</span></li>
+        </ul>
+        <a href="tel:+17252962943" class="btn btn-p" style="margin-top:1.1rem;padding:.6rem 1.2rem;font-size:.82rem">📞 Call Now</a>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>© 2025 Sabor a México · Las Vegas, NV · All rights reserved.</p>
+      <p>Mexican Restaurant · Meadows Mall · +1 725-296-2943</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Nav scroll
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('sc',window.scrollY>28));
+
+// Hamburger
+const hbg=document.getElementById('hbg'),nl=document.getElementById('nav-links');
+hbg.addEventListener('click',()=>nl.classList.toggle('open'));
+nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nl.classList.remove('open')));
+
+// Scroll animations
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')});
+},{threshold:.1,rootMargin:'0px 0px -35px 0px'});
+document.querySelectorAll('.fu,.fi').forEach(el=>obs.observe(el));
+
+// Stagger menu & review cards
+document.querySelectorAll('.mc').forEach((c,i)=>c.style.transitionDelay=`${i*.09}s`);
+document.querySelectorAll('.rv').forEach((c,i)=>c.style.transitionDelay=`${i*.07}s`);
+
+// Hero entrance
+window.addEventListener('DOMContentLoaded',()=>{
+  setTimeout(()=>{
+    document.querySelectorAll('.hero .fu').forEach((el,i)=>{
+      el.style.transitionDelay=`${.15+i*.18}s`;
+      el.classList.add('vis');
+    });
+  },80);
+});
+
+// Form submit
+function submitForm(){
+  const n=document.getElementById('f-name').value.trim();
+  const p=document.getElementById('f-phone').value.trim();
+  if(!n||!p){alert('Please fill in your name and phone number.');return;}
+  alert('Thank you, '+n+'! We\'ve received your message and will be in touch at '+p+' shortly.\n\nFor immediate help, call us at +1 725-296-2943.');
+  document.getElementById('f-name').value='';
+  document.getElementById('f-phone').value='';
+  document.getElementById('f-email').value='';
+  document.getElementById('f-msg').value='';
+}
+</script>
+</body>
+</html>
